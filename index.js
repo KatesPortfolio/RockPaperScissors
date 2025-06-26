@@ -8,3 +8,11 @@ function getComputerChoice (){
 }
 
 console.log(getComputerChoice())
+
+function getHumanChoice (){
+    const playerChoice = prompt("Write rock, paper, scissors");
+
+    return playerChoice;
+}
+
+console.log(getHumanChoice())
