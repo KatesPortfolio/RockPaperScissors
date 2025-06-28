@@ -12,6 +12,24 @@ function getHumanChoice() {
   return playerChoice;
 }
 
+function playRound(humanChoice, computerChoice) {
+  if (
+    (humanChoice === "paper" && computerChoice === "rock") ||
+    (humanChoice === "scissors" && computerChoice === "paper") ||
+    (humanChoice === "rock" && computerChoice === "scissors")
+  ) {
+    console.log("You lose! Human choice won this round");
+    return humanChoice;
+  } else if (
+    (computerChoice === "paper" && humanChoice === "rock") ||
+    (computerChoice === "scissors" && humanChoice === "paper") ||
+    (computerChoice === "rock" && humanChoice === "scissors")
+  ) {
+    console.log("You lose! Computer choice won this round");
+    return computerChoice;
+  } else {
+    console.log("same choice, 0 points");
+  }
 }
 
 function playGame() {
